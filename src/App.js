@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
-import { getDrums } from './services/fetch-utils';
+import { getDrums, getPets } from './services/fetch-utils';
 import DrumsList from './DrumsList';
+import PetsList from './PetsList';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
   }
 
   async function fetchPets() {
-    const data = await getComputedStyle();
+    const data = await getPets();
     setPets(data);
   }
 
@@ -28,6 +29,8 @@ function App() {
     <div className="App">
       <h1>Drums:</h1>
       <DrumsList drums={drums} />
+      <h1>Pets:</h1>
+      <PetsList pets={pets} />
       
     </div>
   );
