@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useState, useEffect } from 'react';
-import { getDrums, getPets } from './services/fetch-utils';
+import { getDrums, getPets, getGames } from './services/fetch-utils';
 import DrumsList from './DrumsList';
 import PetsList from './PetsList';
+import GamesList from './GamesList';
 
 function App() {
 
@@ -38,6 +39,8 @@ function App() {
       <DrumsList drums={drums} />
       <h1>Pets:</h1>
       <PetsList pets={pets} />
+      <h1>Games:</h1>
+      <GamesList games={games} />
       
     </div>
   );
