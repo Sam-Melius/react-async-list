@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 import { getDrums } from './services/fetch-utils';
+import DrumsList from './DrumsList';
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Drums:</h1>
+      <DrumsList drums={drums} />
       
     </div>
   );
