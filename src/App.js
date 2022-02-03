@@ -42,7 +42,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">Async Lists
+    <div className="App">We have what you are looking for!
       <h1>Drums:</h1>
       <DrumsList drums={drums} />
       <h1>Pets:</h1>
