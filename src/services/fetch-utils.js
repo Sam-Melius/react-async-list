@@ -15,3 +15,11 @@ export async function getPets() {
 
   return checkError(response);
 }
+
+export async function getGames() {
+  const response = await client
+    .from('games')
+    .select();
+
+  return checkError(response);
+}

@@ -9,6 +9,7 @@ function App() {
 
   const [drums, setDrums] = useState([]);
   const [pets, setPets] = useState([]);
+  const [games, setGames] = useState([]);
 
   async function fetchDrums() {
     const data = await getDrums();
@@ -20,9 +21,15 @@ function App() {
     setPets(data);
   }
 
+  async function fetchGames() {
+    const data = await getGames();
+    setGames(data);
+  }
+
   useEffect(() => {
     fetchDrums();
     fetchPets();
+    fetchGames();
   }, []);
 
   return (
