@@ -1,10 +1,10 @@
 import React from 'react';
 
 export default function StatesList({ states }) {
-  return states.map((state, i) => <div key={state + i}>
-    <p>{state.name}</p>
-    <p>{state.number}</p>
-    <p>{state.population}</p>
-    <p>{state.flower}</p>
+  return states.map((state, i) => <div className='states' key={state + i}>
+    <p>Name: {state.name}</p>
+    <p>State #{state.number}</p>
+    <p>Population: {state.population}</p>
+    <p>State Flower: {state.flower}</p>
   </div>);
 }

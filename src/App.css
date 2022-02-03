@@ -1,6 +1,9 @@
 .App {
   text-align: center;
-  display: grid;
+  font-family: cursive;
+  
+  
+  
 }
 
 .App-logo {
@@ -36,4 +39,64 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.drums {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center;
+  font-family: monospace;
+  font-size: 1rem;
+  border:double;
+  border-radius: 1rem;
+  color:yellowgreen;
+  background-color: black;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.pets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center; 
+  font-family: monospace;
+  font-size: 1rem;
+  border:double;
+  border-radius: 1rem;
+  color:lightskyblue;
+  background-color: black;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.games {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center; 
+  font-family: monospace;
+  font-size: 1rem;
+  border:double;
+  border-radius: 1rem;
+  color:violet;
+  background-color: black;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.states {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center; 
+  font-family: monospace;
+  font-size: 1rem;
+  border:double;
+  border-radius: 1rem;
+  color:red;
+  background-color: black;
+  padding: .5rem;
+  margin: .5rem;
 }

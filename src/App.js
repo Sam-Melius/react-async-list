@@ -1,10 +1,11 @@
 
 import './App.css';
 import { useState, useEffect } from 'react';
-import { getDrums, getPets, getGames } from './services/fetch-utils';
+import { getDrums, getPets, getGames, getStates } from './services/fetch-utils';
 import DrumsList from './DrumsList';
 import PetsList from './PetsList';
 import GamesList from './GamesList';
+import StatesList from './StatesList';
 
 function App() {
 
@@ -48,6 +49,8 @@ function App() {
       <PetsList pets={pets} />
       <h1>Games:</h1>
       <GamesList games={games} />
+      <h1>States:</h1>
+      <StatesList states={states} />
       
     </div>
   );
