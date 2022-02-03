@@ -7,14 +7,21 @@ import DrumsList from './DrumsList';
 function App() {
 
   const [drums, setDrums] = useState([]);
+  const [pets, setPets] = useState([]);
 
   async function fetchDrums() {
     const data = await getDrums();
     setDrums(data);
   }
 
+  async function fetchPets() {
+    const data = await getComputedStyle();
+    setPets(data);
+  }
+
   useEffect(() => {
     fetchDrums();
+    fetchPets();
   }, []);
 
   return (

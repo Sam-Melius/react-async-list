@@ -7,3 +7,11 @@ export async function getDrums() {
 
   return checkError(response);
 }
+
+export async function getPets() {
+  const response = await client
+    .from('pets')
+    .select();
+
+  return checkError(response);
+}
