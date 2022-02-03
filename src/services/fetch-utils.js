@@ -23,3 +23,11 @@ export async function getGames() {
 
   return checkError(response);
 }
+
+export async function getStates() {
+  const response = await client
+    .from('states')
+    .select();
+
+  return checkError(response);
+}
